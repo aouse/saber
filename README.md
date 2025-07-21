@@ -17,7 +17,7 @@ Run tests: ```npm run test```
 ***Note errors can be simulated in the following ways***
 
 #### Invalid Regex:
-Try adding a regex pattern that is not valid JavaScript syntax, such as [abc (missing closing bracket).
+Try adding a regex pattern that is not valid JavaScript syntax, such as ```[abc``` (missing closing bracket).
 The form should display an "Invalid regex pattern" error.
 
 #### Empty Fields:
@@ -35,9 +35,9 @@ Try submitting the form with either the name or regex field empty.
 
 + **CSS Modules:** provide scoped, maintainable styles for each component.
 
-+ **Persistence and state management:** Patterns and document(generated text)  state are synced to localStorage for session persistence. Redux Toolkit manages global (local) state, including patterns, approvals, and document text.
++ **Persistence and state management:** Patterns and document(generated text)  state are synced to localStorage for session persistence. Redux Toolkit manages global state, including patterns, approvals, and document text.
 
-+ **Testing:** Vitest and Testing Library are used for unit and component tests.
++ **Testing:** Vitest and React Testing Library are used for unit and component tests.
 
 ### Assumptions Made During Implementation
 + Regex patterns are stored as plain strings and validated using JavaScript's RegExp constructor.
